@@ -1,3 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#patrons-message p,
+#deans-message p,
+#about p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .hero-section {
   /* background-image: url("images/Picture1.jpg"); */
   background-image: url("images/Picture1.jpg");
@@ -180,4 +191,3 @@
   max-width: 800px;
   margin: 0 auto;
 }
-  
