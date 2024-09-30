@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>National Case Writing Competition</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png" />
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -14,9 +15,11 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-lg"
+    >
       <div class="container">
-        <a class="navbar-brand" href="#">CWC 2024</a>
+        <a class="navbar-brand fw-bold" href="index.html">CWC 2024</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -44,7 +47,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Travel & Accommodation</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -57,48 +62,65 @@
         <p>Sukkur IBA University</p>
         <h3>31st October 2024</h3>
         <a href="#register" class="btn btn-primary mt-3">Register Now</a>
-        <a href="#submit" class="btn btn-light mt-3">Submit Case</a>
+        <a href="#case-guidelines" class="btn btn-light mt-3">Submit Case</a>
       </div>
     </section>
 
     <!-- Patron's Message Section -->
     <section id="patrons-message" class="py-5">
       <div class="container">
-        <h2 class="text-center">Patron's Message</h2>
-        <div class="text-center">
-          <p>
-            Welcome to the First National Case Writing Competition, a
-            significant initiative that reflects Sukkur IBA University's
-            commitment to excellence in education and research. As an
-            AACSB-accredited institution, Sukkur IBA University stands among the
-            top 6% of business schools globally. This prestigious accreditation
-            underscores our dedication to providing a world-class business
-            education that aligns with international standards.
-          </p>
-          <p>
-            Our BS Accounting and Finance program, recognized by the Association
-            of Chartered Certified Accountants (ACCA) UK, offers the maximum
-            exemption of 9 out of 13 courses. This achievement highlights our
-            continuous efforts to enhance academic quality and ensure that our
-            students are equipped with the knowledge and skills needed to
-            succeed in today's competitive business environment.
-          </p>
-          <p>
-            The National Case Writing Competition is an incredible opportunity
-            for students, professionals, and academia to collaborate and address
-            real-world business challenges. Through this competition, we aim to
-            cultivate a research-oriented culture that promotes critical
-            thinking, innovation, and practical solutions to the pressing issues
-            facing local businesses and industries.
-          </p>
-          <p>
-            We look forward to seeing the brilliant ideas and strategies that
-            emerge from this competition and are excited about the positive
-            impact they will have on both academia and industry.
-          </p>
-          <p><strong>Best wishes to all the participants!</strong></p>
-          <p><strong>Prof. Dr. Asif Ahmed Shaikh</strong></p>
-          <p>Vice Chancellor, Sukkur IBA University</p>
+        <h2 class="text-center mb-4">Patron's Message</h2>
+        <div class="row align-items-center">
+          <!-- Message Content -->
+          <div class="col-md-8">
+            <p>
+              Welcome to the First National Case Writing Competition, a
+              significant initiative that reflects Sukkur IBA University's
+              commitment to excellence in education and research. As an
+              AACSB-accredited institution, Sukkur IBA University stands among
+              the top 6% of business schools globally. This prestigious
+              accreditation underscores our dedication to providing a
+              world-class business education that aligns with international
+              standards.
+            </p>
+            <p>
+              Our BS Accounting and Finance program, recognized by the
+              Association of Chartered Certified Accountants (ACCA) UK, offers
+              the maximum exemption of 9 out of 13 courses. This achievement
+              highlights our continuous efforts to enhance academic quality and
+              ensure that our students are equipped with the knowledge and
+              skills needed to succeed in today's competitive business
+              environment.
+            </p>
+            <p>
+              The National Case Writing Competition is an incredible opportunity
+              for students, professionals, and academia to collaborate and
+              address real-world business challenges. Through this competition,
+              we aim to cultivate a research-oriented culture that promotes
+              critical thinking, innovation, and practical solutions to the
+              pressing issues facing local businesses and industries.
+            </p>
+            <p>
+              We look forward to seeing the brilliant ideas and strategies that
+              emerge from this competition and are excited about the positive
+              impact they will have on both academia and industry.
+            </p>
+            <p><strong>Best wishes to all the participants!</strong></p>
+          </div>
+
+          <!-- Image on the right side -->
+          <div class="col-md-4 text-center">
+            <img
+              src="images/vc.jpg"
+              alt="Prof. Dr. Asif Ahmed Shaikh"
+              class="img-fluid rounded-circle"
+              style="max-width: 100%"
+            />
+            <div class="m-5">
+              <p><strong>Prof. Dr. Asif Ahmed Shaikh</strong></p>
+              <p>Vice Chancellor, Sukkur IBA University</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -150,25 +172,34 @@
     </section>
 
     <!-- Guidelines for Case Submission Section -->
-    <section id="case-guidelines" class="py-5">
+    <section id="case-guidelines" class="py-5 bg-gradient-light">
       <div class="container">
-        <h2 class="text-center">Guidelines for Case Submission</h2>
-        <div class="text-center">
-          <p>
+        <h2 class="text-center mb-4 text-dark">
+          Guidelines for Case Submission
+        </h2>
+        <div class="text-center mx-auto" style="max-width: 700px">
+          <p class="lead">
             We will strictly follow the double-blind peer review process. All
             papers sent for review will be anonymous and will not contain any
-            information about authors. Kindly use the case submission system at
-            the competition website to submit your structured cases. Your
-            questions or comments should be sent to
-            <a href="mailto:sibacrc@iba-suk.edu.pk">sibacrc@iba-suk.edu.pk</a>.
+            information about authors.
+          </p>
+          <p class="mb-4">
+            Kindly use the case submission system at the competition website to
+            submit your structured cases. Your questions or comments should be
+            sent to
+            <a href="mailto:sibacrc@iba-suk.edu.pk" class="text-primary"
+              >sibacrc@iba-suk.edu.pk</a
+            >.
           </p>
           <p>
-            <a href="guidelines-tutorial.html" class="btn btn-primary mt-3"
-              >Guidelines for Case Submission</a
+            <a
+              href="guidelines-tutorial.html"
+              class="btn btn-primary btn-lg px-4 mx-2 shadow-lg"
+              >Submission Guidelines</a
             >
-          </p>
-          <p>
-            <a href="submit-case.html" class="btn btn-secondary mt-3"
+            <a
+              href="submit-case.html"
+              class="btn btn-secondary btn-lg px-4 mx-2 shadow-lg"
               >Tutorial - How to Submit</a
             >
           </p>
@@ -179,7 +210,7 @@
     <!-- Speakers Section -->
     <section id="speakers" class="py-5 bg-light">
       <div class="container">
-        <h2 class="text-center">Guest Speakers</h2>
+        <h2 class="text-center">Guest Owners</h2>
         <div class="row text-center">
           <!-- Speaker 1 -->
           <div class="col-md-6">
@@ -331,27 +362,53 @@
     </section>
 
     <!-- Registration Section -->
-    <section id="register" class="py-5">
+    <section id="register" class="py-5 bg-gradient-info text-white">
       <div class="container">
-        <h2 class="text-center">Registration Details</h2>
+        <h2 class="text-center text-light mb-5">Registration Details</h2>
         <div class="row">
-          <div class="col-md-6">
-            <h4>Early Bird Registration</h4>
-            <ul>
-              <li>Local Participants (Students): [Fee]</li>
-              <li>Local Participants (Professionals): [Fee]</li>
-              <li>International Participants: [Fee]</li>
-              <li>Sukkur IBA University Students: [Fee]</li>
-            </ul>
+          <div class="col-md-6 mb-4">
+            <div class="card bg-dark text-light p-4 shadow-lg">
+              <h4 class="text-primary mb-3">Early Bird Registration</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <i class="fas fa-user-graduate"></i> Local Participants
+                  (Students): [Fee]
+                </li>
+                <li>
+                  <i class="fas fa-briefcase"></i> Local Participants
+                  (Professionals): [Fee]
+                </li>
+                <li>
+                  <i class="fas fa-globe"></i> International Participants: [Fee]
+                </li>
+                <li>
+                  <i class="fas fa-university"></i> Sukkur IBA University
+                  Students: [Fee]
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="col-md-6">
-            <h4>Standard Registration</h4>
-            <ul>
-              <li>Local Participants (Students): [Fee]</li>
-              <li>Local Participants (Professionals): [Fee]</li>
-              <li>International Participants: [Fee]</li>
-              <li>Sukkur IBA University Students & Alumni: [Fee]</li>
-            </ul>
+          <div class="col-md-6 mb-4">
+            <div class="card bg-dark text-light p-4 shadow-lg">
+              <h4 class="text-secondary mb-3">Standard Registration</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <i class="fas fa-user-graduate"></i> Local Participants
+                  (Students): [Fee]
+                </li>
+                <li>
+                  <i class="fas fa-briefcase"></i> Local Participants
+                  (Professionals): [Fee]
+                </li>
+                <li>
+                  <i class="fas fa-globe"></i> International Participants: [Fee]
+                </li>
+                <li>
+                  <i class="fas fa-university"></i> Sukkur IBA University
+                  Students & Alumni: [Fee]
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -362,12 +419,14 @@
       <div class="container text-center">
         <h2>Poster</h2>
         <!-- image -->
-        <img
-          src="images/poster.jpg"
-          alt="Poster 1"
-          class="img-fluid mb-3"
-          style="width: 600px"
-        />
+        <a href="images/poster.jpg">
+          <img
+            src="images/poster.jpg"
+            alt="Poster 1"
+            class="img-fluid mb-3"
+            style="width: 600px"
+          />
+        </a>
       </div>
     </section>
 
@@ -429,25 +488,31 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
+    <section id="contact" class="py-5 bg-dark-blue text-light">
       <div class="container text-center">
         <h2>Contact Information</h2>
         <p>Address: Nisar Ahmed Siddiqui Road, Sukkur, Sindh, Pakistan</p>
         <p>
           Email:
-          <a href="mailto:sibacrc@iba-suk.edu.pk">sibacrc@iba-suk.edu.pk</a>
+          <a href="mailto:sibacrc@iba-suk.edu.pk" class="text-info"
+            >sibacrc@iba-suk.edu.pk</a
+          >
         </p>
         <p>Phone: 0320-1066283, 071-5644400 EXT: 4698</p>
       </div>
     </section>
 
-    <div id="footer">
+    <!-- Footer -->
+    <div id="footer" class="bg-dark-blue py-3">
       <div class="container text-center">
-        <p>
+        <p class="text-light">
           &copy; 2024 Design by
-          <a href="https://abdulmanaf12.github.io/" target="_blank">
-            Abdul Manaf
-          </a>
+          <a
+            href="https://abdulmanaf12.github.io/"
+            target="_blank"
+            class="text-info"
+            >Abdul Manaf</a
+          >
         </p>
       </div>
     </div>
