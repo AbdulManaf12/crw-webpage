@@ -493,3 +493,7 @@ html {
     font-size: 1rem;
   }
 }
+
+.bg-skin-gradient {
+  background: linear-gradient(to right, #74d4a1, #79a6de, #9b77cb, #8cd6e0);
+}
