@@ -390,15 +390,33 @@
     <section id="posters" class="py-5">
       <div class="container text-center">
         <h2>Poster</h2>
-        <!-- image -->
-        <a href="images/poster.jpg">
+        <!-- Main Poster -->
+        <div id="main-poster">
           <img
-            src="images/poster.jpg"
-            alt="Poster 1"
+            src="images/poster-main.jpg"
+            alt="Main Poster"
             class="img-fluid mb-3"
             style="width: 600px"
           />
-        </a>
+        </div>
+
+        <!-- Thumbnails -->
+        <div class="poster-thumbnails">
+          <img
+            src="images/poster-main.jpg"
+            alt="Poster 1"
+            class="img-thumbnail mx-2"
+            style="width: 100px; cursor: pointer"
+            onclick="changePoster('images/poster-main.jpg')"
+          />
+          <img
+            src="images/poster.jpg"
+            alt="Poster 2"
+            class="img-thumbnail mx-2"
+            style="width: 100px; cursor: pointer"
+            onclick="changePoster('images/poster.jpg')"
+          />
+        </div>
       </div>
     </section>
 
