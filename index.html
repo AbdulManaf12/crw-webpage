@@ -133,45 +133,61 @@
     <!-- Dean's Message Section -->
     <section id="deans-message" class="py-5">
       <div class="container">
-        <h2 class="text-center">Message from the Dean</h2>
-        <div class="text-center">
-          <p>
-            I am delighted to welcome you to the First National Case Writing
-            Competition, a pioneering initiative that reflects the core values
-            and academic excellence of Sukkur IBA University. As an
-            AACSB-accredited institution, our university is recognized among the
-            top 6% of business schools globally, a testament to the world-class
-            education we provide.
-          </p>
-          <p>
-            The Faculty of Management Sciences has always been at the forefront
-            of fostering innovation, critical thinking, and industry-relevant
-            research. Our commitment to producing industry-ready graduates is
-            evident through our high standards in teaching, research, and
-            professional development. The success of our BS Accounting and
-            Finance program, which enjoys the maximum exemption of 9 out of 13
-            courses from ACCA UK, showcases our faculty's dedication to quality
-            education and global competitiveness.
-          </p>
-          <p>
-            The National Case Writing Competition offers a unique platform for
-            students, faculty, and industry professionals to collaborate on
-            solving real-world business challenges, reinforcing the practical
-            application of management education. I am confident that this
-            competition will ignite a spirit of inquiry, creativity, and
-            leadership among participants, contributing to both personal growth
-            and the broader advancement of our industry.
-          </p>
-          <p>
-            <strong
-              >I wish all participants the best and look forward to the
-              impactful ideas that will emerge from this prestigious
-              competition.</strong
-            >
-          </p>
-          <p><strong>Prof. Dr. Niaz Ahmed Bhutto</strong></p>
-          <p>Dean, Faculty of Management Sciences</p>
-          <p>Sukkur IBA University</p>
+        <h2 class="text-center mb-4">Message from the Dean</h2>
+        <div class="row align-items-center">
+          <!-- Message Content -->
+          <div class="col-md-8">
+            <p>
+              I am delighted to welcome you to the First National Case Writing
+              Competition, a pioneering initiative that reflects the core values
+              and academic excellence of Sukkur IBA University. As an
+              AACSB-accredited institution, our university is recognized among
+              the top 6% of business schools globally, a testament to the
+              world-class education we provide.
+            </p>
+            <p>
+              The Faculty of Management Sciences has always been at the
+              forefront of fostering innovation, critical thinking, and
+              industry-relevant research. Our commitment to producing
+              industry-ready graduates is evident through our high standards in
+              teaching, research, and professional development. The success of
+              our BS Accounting and Finance program, which enjoys the maximum
+              exemption of 9 out of 13 courses from ACCA UK, showcases our
+              faculty's dedication to quality education and global
+              competitiveness.
+            </p>
+            <p>
+              The National Case Writing Competition offers a unique platform for
+              students, faculty, and industry professionals to collaborate on
+              solving real-world business challenges, reinforcing the practical
+              application of management education. I am confident that this
+              competition will ignite a spirit of inquiry, creativity, and
+              leadership among participants, contributing to both personal
+              growth and the broader advancement of our industry.
+            </p>
+            <p>
+              <strong
+                >I wish all participants the best and look forward to the
+                impactful ideas that will emerge from this prestigious
+                competition.</strong
+              >
+            </p>
+          </div>
+
+          <!-- Image on the right side -->
+          <div class="col-md-4 text-center">
+            <img
+              src="images/niaz_new.jpg"
+              alt="Prof. Dr. Niaz Ahmed Bhutto"
+              class="img-fluid rounded-circle"
+              style="max-width: 100%"
+            />
+            <div class="m-5">
+              <p><strong>Prof. Dr. Niaz Ahmed Bhutto</strong></p>
+              <p>Dean, Faculty of Management Sciences</p>
+              <p>Sukkur IBA University</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -198,7 +214,7 @@
           </p>
           <p>
             <a
-              href="guidlines.html"
+              href="guidlines"
               class="btn btn-primary btn-lg px-4 mx-2 shadow-lg"
               >Submission Guidelines</a
             >
@@ -374,15 +390,33 @@
     <section id="posters" class="py-5">
       <div class="container text-center">
         <h2>Poster</h2>
-        <!-- image -->
-        <a href="images/poster.jpg">
+        <!-- Main Poster -->
+        <div id="main-poster">
           <img
-            src="images/poster.jpg"
-            alt="Poster 1"
+            src="images/poster-main.jpg"
+            alt="Main Poster"
             class="img-fluid mb-3"
             style="width: 600px"
           />
-        </a>
+        </div>
+
+        <!-- Thumbnails -->
+        <div class="poster-thumbnails">
+          <img
+            src="images/poster-main.jpg"
+            alt="Poster 1"
+            class="img-thumbnail mx-2"
+            style="width: 100px; cursor: pointer"
+            onclick="changePoster('images/poster-main.jpg')"
+          />
+          <img
+            src="images/poster.jpg"
+            alt="Poster 2"
+            class="img-thumbnail mx-2"
+            style="width: 100px; cursor: pointer"
+            onclick="changePoster('images/poster.jpg')"
+          />
+        </div>
       </div>
     </section>
 
@@ -491,8 +525,8 @@
       </div>
     </section>
 
-    <!-- Footer
-    <div id="footer" class="bg-dark-blue py-3">
+    <!-- Footer -->
+    <!-- <div id="footer" class="bg-dark-blue py-3">
       <div class="container text-center">
         <p class="text-light">
           &copy; 2024 Design by

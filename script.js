@@ -22,3 +22,7 @@ heroSection.style.backgroundImage = `url(${images[0]})`;
 
 // Change image every 5 seconds (5000ms)
 setInterval(changeBackgroundImage, 5000);
+
+function changePoster(imageSrc) {
+  document.querySelector("#main-poster img").src = imageSrc;
+}
